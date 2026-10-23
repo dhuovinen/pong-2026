@@ -7,7 +7,7 @@ A black-and-white, single-player browser game. The ball starts at the top and mo
 This is Don Huovinen's independent practice project for learning the PawsNet team's workflow. PawsNet itself is not changed. The initial game is a setup baseline; subsequent work follows the branch, PR, teammate review, and defect process below.
 
 - **Repository:** [dhuovinen/pong-2026](https://github.com/dhuovinen/pong-2026), private, under Don's personal account.
-- **Status:** Initial implementation; acceptance playtest pending.
+- **Status:** Baseline requirements PONG-1 through PONG-6 accepted by Don on October 23, 2026. Independent teammate review remains separate.
 - **Local preview:** http://127.0.0.1:2026 while the local server runs.
 - **Hosting:** No shared demo, automatic deployment, or automatic PR previews configured yet.
 - **Team:** Don (product owner and contributor), Codex (implementation assistance), teammate reviewer to be assigned.
