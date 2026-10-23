@@ -1,0 +1,53 @@
+:root { color-scheme: dark; font-family: Arial, Helvetica, sans-serif; color: #fff; background: #000; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 280px; }
+button, kbd, .eyebrow, .court-topline, .court-bottomline, .keyboard-hint, .footnote, .identity p { font-family: "Courier New", monospace; }
+button { cursor: pointer; border-radius: 0; }
+button:focus-visible, canvas:focus-visible { outline: 2px solid #fff; outline-offset: 5px; }
+.game-shell { max-width: 1120px; padding: 44px 48px 24px; margin: auto; }
+.masthead { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 32px; gap: 20px; }
+h1 { font-size: clamp(46px, 7vw, 78px); letter-spacing: -5px; line-height: .85; margin: 0; font-weight: 900; }
+h1 span { font-size: .29em; letter-spacing: -1px; margin-left: 13px; vertical-align: top; display: inline-block; padding-top: 3px; }
+.identity p { font-size: 10px; letter-spacing: 1.5px; margin: 16px 0 0; }
+.scoreboard { display: flex; flex-direction: column; align-items: flex-end; gap: 5px; }
+.eyebrow { font-size: 10px; letter-spacing: 1.4px; line-height: 1.5; }
+#score { font-size: 54px; font-weight: 700; line-height: .9; letter-spacing: -3px; font-variant-numeric: tabular-nums; }
+.court-topline, .court-bottomline { display: flex; justify-content: space-between; align-items: center; gap: 12px; font-size: 10px; letter-spacing: 1.2px; }
+.court-topline { padding-bottom: 12px; }
+.court { position: relative; aspect-ratio: 12 / 7; }
+canvas { display: block; width: 100%; height: 100%; touch-action: none; }
+.overlay { position: absolute; inset: 4px 4px 72px; display: grid; place-items: center; pointer-events: none; }
+.overlay[hidden] { display: none; }
+.overlay-content { padding: 24px; text-align: center; background: #000; pointer-events: auto; }
+h2 { font-size: clamp(32px, 5vw, 60px); letter-spacing: -2px; line-height: 1; margin: 18px 0; }
+.overlay p { font-size: 14px; line-height: 1.65; margin: 0 0 25px; }
+#action { background: #fff; border: 1px solid #fff; color: #000; min-width: 180px; padding: 15px 20px; font-weight: bold; display: inline-flex; justify-content: space-between; gap: 28px; }
+#action:hover { background: #000; color: #fff; }
+.keyboard-hint { display: block; font-size: 9px; letter-spacing: 1px; margin-top: 15px; }
+.court-bottomline { min-height: 44px; border-bottom: 1px solid #fff; }
+#pause { background: #000; color: #fff; border: 0; padding: 12px 0 12px 14px; font-size: 11px; letter-spacing: .5px; }
+#pause span { margin-left: 10px; }
+#pause:disabled { visibility: hidden; }
+.instructions { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-top: 20px; font-size: 12px; }
+.instructions p { margin: 0; line-height: 1.8; }
+.instructions .eyebrow { display: block; margin-bottom: 4px; }
+kbd { font-size: 11px; border: 1px solid #fff; padding: 2px 5px; }
+.footnote { margin: 32px 0 0; text-align: center; font-size: 9px; letter-spacing: 1.5px; }
+@media (max-width: 640px) {
+  .game-shell { padding: 28px 18px 20px; }
+  .masthead { margin-bottom: 24px; }
+  h1 { letter-spacing: -3px; }
+  .identity p { font-size: 8px; letter-spacing: .3px; }
+  #score { font-size: 42px; }
+  .scoreboard .eyebrow { font-size: 8px; }
+  .court-topline, .court-bottomline { font-size: 8px; letter-spacing: .6px; }
+  .overlay { inset: 4px 4px 36px; }
+  .overlay-content { padding: 8px; }
+  .overlay .eyebrow, .keyboard-hint { display: none; }
+  h2 { font-size: 30px; margin: 8px 0; letter-spacing: -1px; }
+  .overlay p { font-size: 11px; line-height: 1.4; margin-bottom: 12px; }
+  #action { min-width: 150px; padding: 9px 14px; font-size: 11px; }
+  .instructions { flex-wrap: wrap; gap: 16px; font-size: 11px; }
+  .instructions p:nth-child(2) { flex-basis: 100%; order: 3; }
+  .footnote { font-size: 8px; letter-spacing: .5px; }
+}

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="Pong 2026. One ball. One paddle. Keep it alive. A black-and-white single-player game.">
+  <title>Pong 2026</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='black' d='M0 0h64v64H0z'/%3E%3Ccircle fill='white' cx='32' cy='20' r='6'/%3E%3Cpath fill='white' d='M12 48h40v6H12z'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/src/game.js"></script>
+</head>
+<body>
+  <main class="game-shell">
+    <header class="masthead">
+      <div class="identity"><h1>PONG<span>2026</span></h1><p>ONE BALL. ONE PADDLE. KEEP IT ALIVE.</p></div>
+      <div class="scoreboard"><span class="eyebrow">PADDLE HITS</span><output id="score" aria-label="Score">00</output></div>
+    </header>
+    <section class="play-section" aria-label="Single-player Pong">
+      <div class="court-topline"><span>01 / SINGLE PLAYER</span><span id="status">READY TO PLAY</span></div>
+      <div class="court" id="court">
+        <canvas id="game" width="960" height="560" tabindex="0" aria-label="Pong court. Move with mouse or left and right arrow keys. Space starts or pauses the game.">Your browser needs canvas support to play Pong 2026.</canvas>
+        <div class="overlay" id="overlay">
+          <div class="overlay-content">
+            <span class="eyebrow" id="overlay-label">THE ORIGINAL IDEA. A NEW RALLY.</span>
+            <h2 id="overlay-title">Keep it alive.</h2>
+            <p id="overlay-description">Meet the ball. Move the paddle.<br>Your momentum makes the next shot.</p>
+            <button id="action" type="button">Start game <span aria-hidden="true">↗</span></button>
+            <span class="keyboard-hint" id="keyboard-hint">OR PRESS SPACE</span>
+          </div>
+        </div>
+      </div>
+      <div class="court-bottomline"><span id="rally-message" aria-live="polite">THE NEXT MOVE IS YOURS.</span><button id="pause" type="button" disabled>Pause <span aria-hidden="true">Ⅱ</span></button></div>
+    </section>
+    <footer class="instructions">
+      <p><span class="eyebrow">MOVE</span> Mouse <span aria-hidden="true">/</span> <kbd>←</kbd> <kbd>→</kbd></p>
+      <p><span class="eyebrow">CONTROL THE RETURN</span> Move into the hit to change its angle.</p>
+      <p><kbd>SPACE</kbd> Pause / resume</p>
+    </footer>
+    <p class="footnote">NO OPPONENT. JUST YOU AND THE NEXT BOUNCE.</p>
+  </main>
+</body>
+</html>

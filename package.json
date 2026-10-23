@@ -1,0 +1,13 @@
+{
+  "name": "pong-2026",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A one-player monochrome Pong game and team workflow practice project",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "test": "node --test",
+    "check": "node --check src/physics.js && node --check src/game.js && node --check scripts/serve.mjs"
+  },
+  "engines": { "node": ">=22" }
+}
