@@ -65,4 +65,4 @@ After the initial baseline, each feature change gets a requirement ID, a branch 
 | Date | Requirement | Change | Commit / PR | Author | Verified by |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-23 | PONG-1–6 | Initial agreed scope implemented as the setup baseline, including supporting pause controls | [1b67dc7](https://github.com/dhuovinen/pong-2026/commit/1b67dc7d8cc4bb9bcc82596e51a3a1ec2dfbbd84) | Don with Codex | Codex: syntax checks, 20 automated tests, Chrome gameplay checks. At baseline, Don's acceptance and independent teammate review were pending. |
-| 2026-10-23 | PONG-1–6 | Record product-owner acceptance and update README status | Acceptance PR pending creation | Don; recorded with Codex | Don's confirmation in project chat, quoted above; independent teammate review remains separate. |
+| 2026-10-23 | PONG-1–6 | Record product-owner acceptance and update README status | [PR #1](https://github.com/dhuovinen/pong-2026/pull/1) | Don; recorded with Codex | Don's confirmation in project chat, quoted above; independent teammate review remains separate. |
