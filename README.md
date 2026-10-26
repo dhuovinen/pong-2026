@@ -4,7 +4,7 @@ One ball. One paddle. Keep it alive.
 
 A black-and-white, single-player browser game. The ball starts at the top and moves downward. Return it with a bottom paddle controlled by your mouse or the arrow keys. Each paddle hit earns a point. Miss the ball and the game ends; Restart starts a fresh rally.
 
-This is Don Huovinen's independent practice project for learning the PawsNet team's workflow. PawsNet itself is not changed. The initial game is a setup baseline; subsequent work follows the branch, PR, teammate review, and defect process below.
+This started as Don Huovinen's independent practice project for learning and aligning with a team's documented workflow. The initial game is a setup baseline; subsequent work follows the branch, PR, teammate review, and defect process below.
 
 - **Repository:** [dhuovinen/pong-2026](https://github.com/dhuovinen/pong-2026), private, under Don's personal account.
 - **Status:** Initial implementation; acceptance playtest pending.
@@ -95,4 +95,4 @@ The first baseline is committed as project setup before the exercises. That does
 
 ## Prior work and AI disclosure
 
-The October 23, 2026 baseline was implemented with Codex. Later exercises should identify exactly what changed from this starting point. Workflow conventions were adapted from the PawsNet reference documents provided locally; those documents are not included in this repository.
+The October 23, 2026 baseline was implemented with Codex. Later exercises should identify exactly what changed from this starting point. Workflow conventions were adapted from a reference documents provided locally; those documents are not included in this repository.
