@@ -12,6 +12,13 @@ This is Don Huovinen's independent practice project for learning the PawsNet tea
 - **Hosting:** No shared demo, automatic deployment, or automatic PR previews configured yet.
 - **Team:** Don (product owner and contributor), Codex (implementation assistance), teammate reviewer to be assigned.
 
+## Enhancing Learning
+We are also going to use this for on-going work on:
+- (Agentic) Software Factories - personally I prefer the term dark factories
+- AI based ideation and grooming - another key aspect
+- Human based feedback - the right feedback loops, grooming and grouping of ideas, etc.
+- Quality - We are going to focus on quality and impact as judge by end users and how we measure. We also want to measure adoption
+  
 ## Start here
 
 | Read | For |
